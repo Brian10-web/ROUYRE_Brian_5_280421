@@ -1,0 +1,113 @@
+body
+{
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color:#F3E9F1;
+}
+
+.logoImg
+{
+    height: 100px;
+    /* width: 100px; */
+}
+
+
+a
+{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+
+/* h2:hover
+{
+    background:linear-gradient(to bottom right, #E68A09, #8F5BFE);
+} */
+
+.button
+{
+    width: 100px;
+}
+.icon1
+{
+    top: 28px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.panier
+{
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.main
+{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card
+{
+    background-color: #F3E9F1;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+input
+{
+    width: auto;
+}
+
+img
+{
+    height: 200px;
+}
+
+figure
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+footer
+{
+    background-color: #F3E9F1;
+    height: 50px;
+}
+
+footer ul
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer li
+{
+    list-style: none;
+}
