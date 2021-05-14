@@ -81,7 +81,7 @@ input
     width: auto;
 }
 
-img
+.indexImg
 {
     height: 200px;
 }
@@ -110,4 +110,50 @@ footer ul
 footer li
 {
     list-style: none;
+}
+
+
+
+/*
+
+
+PAGE PRDUIT
+
+
+*/
+
+
+
+#item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oneCard
+{
+    background-color: #F3E9F1;
+    height: 235px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.produitImg
+{
+    /* height: 400px; */
+    width: 350px;
+}
+
+.boxImg
+{
+    margin-right: 10px;
 }

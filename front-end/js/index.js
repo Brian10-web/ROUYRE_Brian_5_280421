@@ -14,13 +14,14 @@ fetch( url , {method : 'GET'})
         console.log(product.name)
         console.log(product.price)
         myHTML += `<div class="card">
-                        <figure><img src=${product.imageUrl} alt="${product.name}"></figure>
+                        <figure><img class="indexImg" src=${product.imageUrl} alt="${product.name}"></figure>
                         <p>${product.name}</p>
                         <p>${product.price}</p>
-                        <input type="button" value="Voir le produit">
+                        <a href="produit.html?id=${product._id}">Voir le produit</a>
                     </div>`
     });
 
     console.log(myHTML)
     HTML.innerHTML = myHTML
 })
+
