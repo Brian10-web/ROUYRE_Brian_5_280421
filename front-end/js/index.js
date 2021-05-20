@@ -10,16 +10,20 @@ fetch( url , {method : 'GET'})
     let HTML = document.getElementById("produit")
 
     let myHTML = ""
-    products.forEach(product => {
+
+    if (products.length > 0){
+         products.forEach(product => {
         console.log(product.name)
         console.log(product.price)
         myHTML += `<div class="card">
                         <figure><img class="indexImg" src=${product.imageUrl} alt="${product.name}"></figure>
                         <p>${product.name}</p>
                         <p>${product.price}</p>
-                        <a href="produit.html?id=${product._id}">Voir le produit</a>
+                        <a class=indexA" href="produit.html?id=${product._id}">Voir le produit</a>
                     </div>`
     });
+    }
+   
 
     console.log(myHTML)
     HTML.innerHTML = myHTML

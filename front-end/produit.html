@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/46f48c67bd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/produit.js"></script>
     <title>Produit</title>
 </head>
 <body>
@@ -17,15 +16,27 @@
             </figure>
         </div>
         <div class="panier">
-            <a href="panier.html">
+            <a class="indexA" href="panier.html">
             <h2>Panier</h2>
             <i class="fas fa-shopping-cart icon1"></i>
             </a>
         </div>
     </header>
 
-    <main>
-        <div id="item">
+    <main id="main">
+        <div id="oneCard">
+            <div id="boxImg"> 
+                <!-- <figure><img class="produitImg" src=${produit.imageUrl} alt="${produit.name}"></figure> -->
+            </div>
+            <div id="produitText">
+                <p></p>
+                <p></p>
+                <p></p>
+                <a class="produitA" href="panier.html"> Acheter </a>
+            </div>
+        </div>
+
+           
     </main>
 
 
@@ -37,5 +48,10 @@
             <li>A propos</li>
         </ul>
     </footer>
+
+
+
+
+    <script src="js/produit.js"></script>
 </body>
 </html>
