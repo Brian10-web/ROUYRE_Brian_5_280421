@@ -39,12 +39,40 @@ fetch( url , {method : 'GET'})
         myHTML += `                    
                     </select>
                     </div>
-                    <a class="produitA" href="panier.html"> Acheter </a>
+                    <a id="produitA" href="panier.html"> Ajouter au panier </a>
                     </div>
                     </div>`
 
     console.log(myHTML)
     var Html =document.getElementById("main")
     Html.innerHTML= myHTML
-});
 
+
+
+    let btnPanier = document.getElementById("produitA");
+    console.log(btnPanier);
+
+    btnPanier.addEventListener("click", event => {
+        event.preventDefault();
+        console.log("click ok");
+        alert("le produit à été ajouté au panier.")
+
+    panier = {
+        id : produit.id,
+        name : produit.name,
+        imageUrl : produit.imageUrl,
+        description : produit.description,
+        price : produit.price,
+        color : produit.color
+    };
+    
+    selectProduit = JSON.stringify(panier);
+    console.log(panier)
+
+    localStorage.setItem('shop' , selectProduit);
+
+    console.log(localStorage.getItem('shop'))
+
+    });
+
+});
