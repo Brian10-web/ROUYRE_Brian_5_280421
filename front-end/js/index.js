@@ -13,8 +13,6 @@ fetch( url , {method : 'GET'})
 
     if (products.length > 0){
          products.forEach(product => {
-        console.log(product.name)
-        console.log(product.price)
         myHTML += `<div class="card">
                         <figure><img class="indexImg" src=${product.imageUrl} alt="${product.name}"></figure>
                         <p>${product.name}</p>
@@ -23,9 +21,6 @@ fetch( url , {method : 'GET'})
                     </div>`
     });
     }
-   
-
-    console.log(myHTML)
     HTML.innerHTML = myHTML
 })
 

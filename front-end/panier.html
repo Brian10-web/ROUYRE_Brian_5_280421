@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/46f48c67bd.js" crossorigin="anonymous"></script>        <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/46f48c67bd.js" crossorigin="anonymous"></script>        
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Panier</title>
 </head>
@@ -23,39 +23,17 @@
         </div>
     </header>
 
-    <form method="POST">
-        <p>
-            <label for="firstName">Prénom : </label><br>
-            <input type="text" name="prenom" placeholder="Ex : Nelson">
-        </p>
-        <p>
-            <label for="name">Nom : </label>
-            <input type="text" name="nom" placeholder="Ex : Alaporte">
-        </p>
-        <p>
-            <label for="mail">Votre adresse mail : </label>
-            <input type="text" name="mail" placeholder="Ex : votremail@mail.com">
-        </p>
-        <p>
-            <label for="adress">Adresse : </label>
-            <input type="text" name="adress" placeholder="Votre adresse">
-        </p>
-        <p>
-            <label for="postalcode">Code postal : </label>
-            <input type="text" name="postalcode" placeholder="Votre code postal">
-        </p>
-        <p>
-            <label for="pays">Pays : </label>
-            <select name="pays" id="pays">
-                <option value="france">France</option>
-                <option value="espagne">Espagne</option>
-                <option value="italie">Italie</option>
-                <option value="belgique">Belgique</option>
-                <option value="suisse">Suisse</option>
-            </select>
-        </p>
-        <input type="button" value="Envoyer">
-    </form>
+
+    <div id="panierMain">
+        <div id="panierElements">
+            <p>Article(s)</p>
+            <p>Price</p>
+            <p>Total</p>  
+        </div>
+    </div>
+    
+
+  
 
 
     <footer>
@@ -65,5 +43,7 @@
             <li>A propos</li>
         </ul>
     </footer>
+
+    <script src="js/panier.js"></script>
 </body>
 </html>
