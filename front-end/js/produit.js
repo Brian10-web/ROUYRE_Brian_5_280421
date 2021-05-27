@@ -26,7 +26,7 @@ fetch( url , {method : 'GET'})
                         <div id="produitText">
                         <p>${produit.description}</p>
                         <p>${produit.name}</p>
-                        <p>${produit.price}</p>
+                        <p>${produit.price/100} €</p>
                         <div id="btn">
                         <select name="" id="select">
 
@@ -69,7 +69,7 @@ fetch( url , {method : 'GET'})
         let panierComplet = []
 
         produit = {
-            id : produit.id,
+            id : produit._id,
             name : produit.name,
             imageUrl : produit.imageUrl,
             description : produit.description,

@@ -16,11 +16,12 @@ fetch( url , {method : 'GET'})
         myHTML += `<div class="card">
                         <figure><img class="indexImg" src=${product.imageUrl} alt="${product.name}"></figure>
                         <p>${product.name}</p>
-                        <p>${product.price}</p>
+                        <p>${product.price/100} € </p>
                         <a class=indexA" href="produit.html?id=${product._id}">Voir le produit</a>
                     </div>`
     });
     }
     HTML.innerHTML = myHTML
 })
+
 
