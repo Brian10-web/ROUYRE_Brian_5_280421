@@ -1,4 +1,3 @@
-
 let url = 'http://localhost:3000/api/teddies';
 
 fetch( url , {method : 'GET'})

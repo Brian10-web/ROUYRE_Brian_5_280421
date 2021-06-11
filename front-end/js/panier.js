@@ -42,26 +42,10 @@
             `;
             if (i === myCart.length-1)toutPanier.innerHTML = structurePanier;
             console.log(produitPanier.id)
-        })
-
-        
-        
+        })    
         
     };
-    /*************************************BOUTON SUPPRIMER****************************************/
-
-    // function deleteItem (e, produitid , coleur){
-    //     console.log(e, produitid , coleur)
-    //     myCart = myCart.filter ( produit => {
-    //         produit.id != produitid && produit.color != coleur
-    //     })
-
-    //     localStorage.setItem('article', myCart)
-    // }
-
-
-    //selection du bon id 
-
+ 
 
     // declaration de variable (tableau) pour y stocker les prix des différents articles
     let prixTotal = [];

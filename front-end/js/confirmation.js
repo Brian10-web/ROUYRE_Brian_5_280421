@@ -4,14 +4,16 @@ if(localStorage.getItem("order_id")){
 
     let confirmation = `
     <div> 
-        <h1>VOici votre numéro de commande</h1>
+        <h1>Voici votre numéro de commande</h1>
         ${localStorage.getItem("order_id")}
+        <h2> Merci pour votre commande, à bientôt !!</h2>
     </div>
     `
     div.innerHTML = confirmation
 
-    localStorage.removeItem("article");
-    localStorage.removeItem("responseId");
+    localStorage.clear();
+
+
 } else {
     window.location = "index.html"
 }
